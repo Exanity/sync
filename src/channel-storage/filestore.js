@@ -59,15 +59,6 @@ export class FileStore {
 
         const filename = this.filenameForChannel(channelName);
         const fileContents = new Buffer(JSON.stringify(original), 'utf8');
-        if (fileContents.length > SIZE_LIMIT) {
-            throw new ChannelStateSizeError(
-                'Channel state size is too large',
-                {
-                    limit: SIZE_LIMIT,
-                    actual: fileContents.length
-                }
-            );
-        }
 
         return await writeFileAsync(filename, fileContents);
     }
