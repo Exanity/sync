@@ -1,7 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
 
 .idol-card {
-  transform: scale(0.6);
+  -webkit-transform: scale(0.6);
+      -ms-transform: scale(0.6);
+          transform: scale(0.6);
   background: white;
   width: 570px;
   margin: auto;
@@ -13,11 +15,18 @@
   text-align: center;
   margin-bottom: 12px;
   margin-right: 10px;
-  transform-origin: right bottom;
+  -webkit-transform-origin: right bottom;
+      -ms-transform-origin: right bottom;
+          transform-origin: right bottom;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
   display: inline-flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
   margin-left: -228px;
   margin-top: -150px;
+  vertical-align: top;
 }
 
 .idol-card__image-container {
@@ -31,6 +40,13 @@
 }
 
 .idol-card__image-container.akb {
+    background: -webkit-repeating-linear-gradient(
+        45deg,
+        #d473c7,
+        #d473c7 10px,
+        #ffd7f6 10px,
+        #ffd7f6 20px
+      );
     background: repeating-linear-gradient(
         45deg,
         #d473c7,
@@ -40,6 +56,13 @@
       );
 }
 .idol-card__image-container.ske {
+  background: -webkit-repeating-linear-gradient(
+      45deg,
+      #d2d473,
+      #d2d473 10px,
+      #feffc9 10px,
+      #feffc9 20px
+    );
   background: repeating-linear-gradient(
       45deg,
       #d2d473,
@@ -49,6 +72,13 @@
     );
 }
 .idol-card__image-container.nmb {
+    background: -webkit-repeating-linear-gradient(
+        45deg,
+        #b97a1b,
+        #b97a1b 10px,
+        #ffdba4 10px,
+        #ffdba4 20px
+      );
     background: repeating-linear-gradient(
         45deg,
         #b97a1b,
@@ -58,6 +88,13 @@
       );
 }
 .idol-card__image-container.hkt {
+    background: -webkit-repeating-linear-gradient(
+        45deg,
+        #000000,
+        #000000 10px,
+        #ffffff 10px,
+        #ffffff 20px
+      );
     background: repeating-linear-gradient(
         45deg,
         #000000,
@@ -67,6 +104,13 @@
       );
 }
 .idol-card__image-container.ngt {
+    background: -webkit-repeating-linear-gradient(
+        45deg,
+        #e21717,
+        #e21717 10px,
+        #ffcfcf 10px,
+        #ffcfcf 20px
+      );
     background: repeating-linear-gradient(
         45deg,
         #e21717,
@@ -76,6 +120,13 @@
       );
 }
 .idol-card__image-container.stu {
+    background: -webkit-repeating-linear-gradient(
+        45deg,
+        #8886ff,
+        #8886ff 10px,
+        #dadaff 10px,
+        #dadaff 20px
+      );
     background: repeating-linear-gradient(
         45deg,
         #8886ff,
@@ -85,6 +136,13 @@
       );
 }
 .idol-card__image-container.nogi {
+    background: -webkit-repeating-linear-gradient(
+        45deg,
+        #9e37ff,
+        #9e37ff 10px,
+        #ebd5ff 10px,
+        #ebd5ff 20px
+      );
     background: repeating-linear-gradient(
         45deg,
         #9e37ff,
@@ -94,6 +152,13 @@
       );
 }
 .idol-card__image-container.keya {
+    background: -webkit-repeating-linear-gradient(
+        45deg,
+        #29d437,
+        #29d437 10px,
+        #c9ffcd 10px,
+        #c9ffcd 20px
+      );
     background: repeating-linear-gradient(
         45deg,
         #29d437,
@@ -117,10 +182,13 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   min-height: 100%;
   min-width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .idol-card__unit-name {
@@ -138,7 +206,9 @@
 }
 
 .idol-card__info {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 4px 1fr 1fr 4px;
     grid-template-columns: 4px 1fr 1fr 4px;
     margin-left: 16px;
     margin-right: 16px;
@@ -213,6 +283,8 @@
 }
 
 .idol-card__unit-stats {
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
   color: white;
   font-weight: 700;
@@ -220,7 +292,9 @@
 }
 
 .idol-card__unit-stats .one-third {
-  flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
   float: left;
   padding: 20px 10px;
   border-right: 2px solid #ffffff;
