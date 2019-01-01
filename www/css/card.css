@@ -1,0 +1,244 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+.idol-card {
+  transform: scale(0.6);
+  background: white;
+  width: 320px;
+  display: inline-block;
+  margin: auto;
+  border-radius: 19px;
+  position: relative;
+  box-shadow: -1px 15px 30px -12px black;
+  z-index: 20;
+  font: 14px/20px "Lato", Arial, sans-serif;
+  text-align: center;
+  margin-left: -128px;
+  margin-top: -224px;
+  margin-bottom: 12px;
+  margin-right: 10px;
+  transform-origin: right bottom;
+}
+
+.idol-card__image-container {
+  position: relative;
+  height: 230px;
+  margin-bottom: 12px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  padding: 10px;
+  z-index: 40;
+}
+
+.idol-card__image-container.akb {
+    background: repeating-linear-gradient(
+        45deg,
+        #d473c7,
+        #d473c7 10px,
+        #ffd7f6 10px,
+        #ffd7f6 20px
+      );
+}
+.idol-card__image-container.ske {
+  background: repeating-linear-gradient(
+      45deg,
+      #d2d473,
+      #d2d473 10px,
+      #feffc9 10px,
+      #feffc9 20px
+    );
+}
+.idol-card__image-container.nmb {
+    background: repeating-linear-gradient(
+        45deg,
+        #b97a1b,
+        #b97a1b 10px,
+        #ffdba4 10px,
+        #ffdba4 20px
+      );
+}
+.idol-card__image-container.hkt {
+    background: repeating-linear-gradient(
+        45deg,
+        #000000,
+        #000000 10px,
+        #ffffff 10px,
+        #ffffff 20px
+      );
+}
+.idol-card__image-container.ngt {
+    background: repeating-linear-gradient(
+        45deg,
+        #e21717,
+        #e21717 10px,
+        #ffcfcf 10px,
+        #ffcfcf 20px
+      );
+}
+.idol-card__image-container.stu {
+    background: repeating-linear-gradient(
+        45deg,
+        #8886ff,
+        #8886ff 10px,
+        #dadaff 10px,
+        #dadaff 20px
+      );
+}
+.idol-card__image-container.nogi {
+    background: repeating-linear-gradient(
+        45deg,
+        #9e37ff,
+        #9e37ff 10px,
+        #ebd5ff 10px,
+        #ebd5ff 20px
+      );
+}
+.idol-card__image-container.keya {
+    background: repeating-linear-gradient(
+        45deg,
+        #29d437,
+        #29d437 10px,
+        #c9ffcd 10px,
+        #c9ffcd 20px
+      );
+}
+
+.idol-card__image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.idol-card__image img {
+  max-width: 100%;
+  z-index: 30;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.idol-card__unit-name {
+  font-size: 26px;
+  color: black;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+
+.idol-card__unit-nick {
+  font-size: 13px;
+  color: gray;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.idol-card__info {
+    display: grid;
+    grid-template-columns: 4px 1fr 1fr 4px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 3px;
+}
+
+.idol-card__info-item {
+    font-size: 12px;
+    font-weight: 700;
+    color: #d1b147;
+    grid-column: auto;
+}
+
+.icon {
+    color: purple; 
+}
+
+.idol-card-graduation {
+    margin-right: 12px;
+    margin-bottom: 3px;
+    text-align: right;
+    font-weight: 700;
+    color: #d1b147;
+}
+
+.idol-card__unit-description {
+  border-radius: 10px;
+  text-align: left;
+  margin: 8px;
+}    
+.idol-card__unit-description.title {
+  margin-bottom: -8px;
+  color: black;
+}
+.idol-card__unit-description.info {
+  height: 90px;
+  color: gray;
+}
+
+.idol-card__unit-stats.akb {
+  background: #d473c7;
+}
+.idol-card__unit-stats.ske {
+  background: #d2d473;
+}
+.idol-card__unit-stats.nmb {
+  background: #b97a1b;
+}
+.idol-card__unit-stats.hkt {
+  background: #000000;
+}
+.idol-card__unit-stats.ngt {
+  background: #e21717;
+}
+.idol-card__unit-stats.stu {
+  background: #8886ff;
+}
+.idol-card__unit-stats.nogi {
+  background: #9e37ff;
+}
+.idol-card__unit-stats.keya {
+  background: #29d437;
+}
+
+.idol-card__line {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 2px solid #ccc;
+  margin: 6px;
+  margin-bottom: -6px;
+}
+
+.idol-card__unit-stats {
+  display: flex;
+  color: white;
+  font-weight: 700;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.idol-card__unit-stats .one-third {
+  flex: 1;
+  float: left;
+  padding: 20px 10px;
+  border-right: 2px solid #ffffff;
+  /*text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;*/
+}
+
+.idol-card__unit-stats .stat {
+  position: relative;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.idol-card__unit-stats .stat-value {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.idol-card__unit-stats .no-border {
+  border-right: none;
+}

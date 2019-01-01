@@ -1,6 +1,7 @@
 *.swp
 cfg.json
 config.yaml
+card.json
 chandump
 chanlogs
 *.log

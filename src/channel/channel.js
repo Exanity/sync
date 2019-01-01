@@ -159,7 +159,8 @@ Channel.prototype.initModules = function () {
         "./kickban"       : "kickban",
         "./ranks"         : "rank",
         "./accesscontrol" : "password",
-        "./anonymouscheck": "anoncheck"
+        "./anonymouscheck": "anoncheck",
+        "./card"          : "card"
     };
 
     var self = this;

@@ -216,3 +216,6 @@ mixer-client-id: null
 
 poll:
   max-options: 50
+
+# Json file name for cards defaults to: "card.json"
+card-json: "card.json"
