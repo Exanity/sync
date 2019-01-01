@@ -3,8 +3,7 @@
 .idol-card {
   transform: scale(0.6);
   background: white;
-  width: 320px;
-  display: inline-block;
+  width: 570px;
   margin: auto;
   border-radius: 19px;
   position: relative;
@@ -12,19 +11,21 @@
   z-index: 20;
   font: 14px/20px "Lato", Arial, sans-serif;
   text-align: center;
-  margin-left: -128px;
-  margin-top: -224px;
   margin-bottom: 12px;
   margin-right: 10px;
   transform-origin: right bottom;
+  display: inline-flex;
+  align-items: flex-end;
+  margin-left: -228px;
+  margin-top: -150px;
 }
 
 .idol-card__image-container {
   position: relative;
-  height: 230px;
-  margin-bottom: 12px;
+  height: 374px;
+  min-width: 257px;
   border-top-left-radius: 14px;
-  border-top-right-radius: 14px;
+  border-bottom-left-radius: 14px;
   padding: 10px;
   z-index: 40;
 }
@@ -215,7 +216,6 @@
   display: flex;
   color: white;
   font-weight: 700;
-  border-bottom-left-radius: 14px;
   border-bottom-right-radius: 14px;
 }
 

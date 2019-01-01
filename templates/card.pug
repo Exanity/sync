@@ -3,49 +3,50 @@
     .idol-card__image
       img(src=pictures[0])
 
-  .idol-card__unit-name #{name}
-  .idol-card__unit-nick #{nickname}
+  div
+    .idol-card__unit-name #{name}
+    .idol-card__unit-nick #{nickname}
 
-  .idol-card__info
-    .idol-card__info-item.icon T
-    .idol-card__info-item.group #{group}, #{team}
-    .idol-card__info-item.gen #{debuted}
-    .idol-card__info-item.icon G
-    .idol-card__info-item.icon D
-    .idol-card__info-item.birth #{birthdate}
-    .idol-card__info-item.nickname #{birthplace}
-    .idol-card__info-item.icon P
-    .idol-card__info-item.icon H
-    .idol-card__info-item.height #{height}
-    .idol-card__info-item.bloodtype #{bloodtype}
-    .idol-card__info-item.icon B
-  .idol-card__unit-description
-    .idol-card__unit-description.title Additional effects
-    .idol-card__line
-    .idol-card__unit-description.info
-      p
-        | 情報はありませんでした。 情報が入れたい場合は、サイト管理者に接触してください。
-      p
-        | No information found. If you want to add information, contact the site admin.
-  
-    if graduated
-      .idol-card-graduation Graduated
-    else
-      .idol-card-graduation Active
+    .idol-card__info
+      .idol-card__info-item.icon T
+      .idol-card__info-item.group #{group}, #{team}
+      .idol-card__info-item.gen #{debuted}
+      .idol-card__info-item.icon G
+      .idol-card__info-item.icon D
+      .idol-card__info-item.birth #{birthdate}
+      .idol-card__info-item.nickname #{birthplace}
+      .idol-card__info-item.icon P
+      .idol-card__info-item.icon H
+      .idol-card__info-item.height #{height}
+      .idol-card__info-item.bloodtype #{bloodtype}
+      .idol-card__info-item.icon B
+    .idol-card__unit-description
+      .idol-card__unit-description.title Additional effects
+      .idol-card__line
+      .idol-card__unit-description.info
+        p
+          | 情報はありませんでした。 情報が入れたい場合は、サイト管理者に接触してください。
+        p
+          | No information found. If you want to add information, contact the site admin.
+    
+      if graduated
+        .idol-card-graduation Graduated
+      else
+        .idol-card-graduation Active
 
-  div(class="idol-card__unit-stats clearfix " + groupClass)
-    .one-third
-      .stat 77
-      .stat-value Cute
-    .one-third
-      .stat 77
-      .stat-value Hot
-    .one-third
-      .stat 77
-      .stat-value Vocal
-    .one-third
-      .stat 77
-      .stat-value Dance
-    .one-third.no-border
-      .stat 77
-      .stat-value Funny
+    div(class="idol-card__unit-stats clearfix " + groupClass)
+      .one-third
+        .stat 77
+        .stat-value Cute
+      .one-third
+        .stat 77
+        .stat-value Hot
+      .one-third
+        .stat 77
+        .stat-value Vocal
+      .one-third
+        .stat 77
+        .stat-value Dance
+      .one-third.no-border
+        .stat 77
+        .stat-value Funny
