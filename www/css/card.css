@@ -222,6 +222,15 @@
     grid-column: auto;
 }
 
+.idol-card__info-item:not(.icon) {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 30ch;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
 .icon {
     color: purple; 
 }
