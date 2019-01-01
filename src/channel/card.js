@@ -1,11 +1,8 @@
-var Config = require("../config");
 var ChannelModule = require("./module");
 var fs = require("fs");
 var pug = require('pug');
 var XSS = require("../xss");
-import { ValidationError } from '../errors';
 import Config from '../config';
-import { ackOrErrorMsg } from '../util/ack';
 
 const jsonfile = Config.get("card-json");
 const GIRLS = (fs.existsSync(jsonfile)) ? JSON.parse(fs.readFileSync(jsonfile, 'UTF-8')) : false;
